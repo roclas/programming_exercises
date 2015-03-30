@@ -1,0 +1,16 @@
+  public final int calculate(int, int);
+    Code:
+       0: iload_1       
+       1: iconst_1      
+       2: if_icmpeq     16
+       5: iload_1       
+       6: iconst_1      
+       7: isub          
+       8: iload_2       
+       9: iload_1       
+      10: imul          
+      11: istore_2      
+      12: istore_1      
+      13: goto          0
+      16: iconst_1      
+      17: ireturn       
