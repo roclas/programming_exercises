@@ -1,0 +1,30 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+        <div class="outer">
+                <div class="inner">
+                 <h1>EUR Exchange vs <span id="vs">USD</span></h1>
+                </div>
+        </div>
+        <div class="outer">
+             <div class="inner">
+                 <span id="truncate" class="button1">empty currencies table</span>
+                 <div>*Click on the buttons at both sides of the graph to see more exchanges</div>
+             </div>
+        </div>
+
+        <div class="outer">
+             <div class="inner">
+                <div style="float:left;">
+                    <div id="othercurrenciesleft" class="othercurrencies" ></div>
+                </div>
+                <svg class="chart" style="float:left;"></svg>
+                <div style="float:left;">
+                    <div id="othercurrenciesright" class="othercurrencies" ></div>
+                </div>
+             </div>
+        </div>
+
+
+        <script src="@{'/public/javascripts/index.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+
+

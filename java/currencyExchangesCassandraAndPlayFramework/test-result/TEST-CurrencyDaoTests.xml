@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<testsuite failures="0" time="0.418" errors="0" skipped="0" tests="3" name="CurrencyDaoTests">
+  <testcase classname="CurrencyDaoTests" name="insertCurrencyWithDao" time="0.408">
+      </testcase>
+  <testcase classname="CurrencyDaoTests" name="readCurrencyWithDao" time="0.01">
+      </testcase>
+  <testcase classname="CurrencyDaoTests" name="listSymbolsWithDao" time="0">
+      </testcase>
+</testsuite>

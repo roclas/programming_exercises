@@ -34,8 +34,7 @@ public class App
         }
         ShoppingBasket basket=new ShoppingBasket();
         List<ProductLine> products = basket.readString(readSmallTextFile(args[0]));
-        float price = basket.calculatePrice(products);
-        System.out.println(price);
+        basket.calculatePrice(products); //float price = basket.calculatePrice(products);
     }
     
   /**

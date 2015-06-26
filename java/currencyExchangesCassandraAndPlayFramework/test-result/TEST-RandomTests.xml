@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<testsuite failures="0" time="0.804" errors="0" skipped="0" tests="3" name="RandomTests">
+  <testcase classname="RandomTests" name="populateCassandra" time="0.002">
+      </testcase>
+  <testcase classname="RandomTests" name="readFromCassandra" time="0.007">
+      </testcase>
+  <testcase classname="RandomTests" name="asyncHTTPRequest" time="0.795">
+      </testcase>
+</testsuite>

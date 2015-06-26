@@ -1,0 +1,17 @@
+# use glob syntax.
+syntax: glob
+
+target/
+tmp/
+lib/
+test-result/
+*.elc
+*.pyc
+*~
+*.iml
+*.ipr
+*.iws
+
+# switch to regexp syntax.
+syntax: regexp
+^\.pc/

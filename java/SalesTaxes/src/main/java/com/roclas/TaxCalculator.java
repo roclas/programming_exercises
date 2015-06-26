@@ -48,11 +48,10 @@ public class TaxCalculator {
 
     /**
      * @param number 
-     * @return the rounded number to the closest 5 cents
+     * @return the rounded number UP to the closest 5 cents
      */
     public static float roundUp2Closest5Cents(float number) {
-        int sign=number>0?1:-1;
-        return ((float) (long) (number* 20 + 0.9)) / 20; //round UP (make sure we really round UP)
+        return ((float) (long) (number* 20 + 0.99)) / 20; //round UP (make sure we really round UP)
     }
     
      /**

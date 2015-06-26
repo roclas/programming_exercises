@@ -7,7 +7,10 @@ import java.util.List;
  * Created by carlos on 4/04/15.
  */
 public class ShoppingBasket {
-    
+    private static String at="at\\s";
+    private static String colon=":";
+    private static String totalStr="Total";
+
     /**
      * reads input string (representing a shopping basket)* 
      * @param input0
@@ -29,8 +32,14 @@ public class ShoppingBasket {
     public float calculatePrice(List<ProductLine> products) {
         float total=(float)0.0;
         for(ProductLine product:products){
-            total+= TaxCalculator.round2ClosestCent(product.getAmmount()*product.getPrice()+product.getTax());
+            float price = TaxCalculator.round2ClosestCent(product.getAmmount() * product.getPrice() + product.getTax());
+            System.out.println(
+                    String.format("%s %s %s",
+                            product.getAmmount(),product.getDescription().replaceAll(at,colon),price)
+            );
+            total+=price;
         }
+        System.out.println( String.format("%s:%s\n", totalStr,total) );
         return total;
     }
 
